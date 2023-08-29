@@ -12,8 +12,9 @@
     "renovate@whitesourcesoftware.com"
   ],
   "onboarding": false,
-  "autodiscover": true,
-  "autodiscoverFilter": ["balena-os/*"],
+  "repositories": [
+    "balena-os/renovate-config-testing"
+  ]
   "requireConfig": "optional",
   "commitMessagePrefix": "Update",
   "commitMessageAction": "",
@@ -31,24 +32,4 @@
   "digest": {
     "commitBody": "Update {{depName}}\nChangelog-entry: Update {{depName}} to {{newDigest}}"
   },
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["*"],
-      "excludePackagePatterns": [
-        ".*meta-balena",
-        ".*balena-yocto-scripts",
-        ".*leviathan",
-        ".*contracts"
-      ],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["regex"],
-      "enabled": true
-    },
-    {
-      "matchManagers": ["github-actions"],
-      "enabled": true
-    }
-  ]
 }
