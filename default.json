@@ -14,7 +14,7 @@
   "onboarding": false,
   "repositories": [
     "balena-os/renovate-config-testing"
-  ]
+  ],
   "requireConfig": "optional",
   "commitMessagePrefix": "Update",
   "commitMessageAction": "",
