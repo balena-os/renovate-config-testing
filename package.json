@@ -25,6 +25,6 @@
     "publishedAt": "2023-08-30T13:53:28.684Z"
   },
   "dependencies": {
-    "renovate": "32.241.11"
+    "renovate": "36.71.0"
   }
 }
